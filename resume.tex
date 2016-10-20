@@ -20,6 +20,9 @@
 % Don't like 10pt? Try 11pt or 12pt 
 \documentclass[11pt]{article}
 
+% Added package for typesetting url.
+\usepackage{url}
+
 % The automated optical recognition software used to digitize resume
 % information works best with fonts that do not have serifs. This
 % command uses a sans serif font throughout. Uncomment both lines (or at
@@ -210,9 +213,9 @@
 \newcommand\doi[1]{doi:\doilink{#1}}
 
 % For \url{SOME_URL}, links SOME_URL to the url SOME_URL
-\providecommand*\url[1]{\href{#1}{#1}}
+%\providecommand*\url[1]{\href{#1}{#1}}
 % Same as above, but pretty-prints SOME_URL in teletype fixed-width font
-\renewcommand*\url[1]{\href{#1}{\texttt{#1}}}
+%\renewcommand*\url[1]{\href{#1}{\texttt{#1}}}
 
 % For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
 \providecommand*\email[1]{\href{mailto:#1}{#1}}
@@ -250,8 +253,8 @@
 %\href{http://www.cse.osu.edu/}%
 %     {Department of Computer Science and Engineering} & \\
 %\href{http://www.osu.edu/}{The Ohio State University}
-Email: \email{jinruan1800@gmail.com}  &  Homepage: \href{http://pages.cs.wisc.edu/~jin}{http://pages.cs.wisc.edu/$\sim$jin}\\
-Phone: (608)886-2903  &  Github: \href{https://github.com/blackruan}{https://github.com/blackruan}
+Email: \email{jinruan1800@gmail.com}  &  Homepage: \url{http://pages.cs.wisc.edu/~jin}\\
+Phone: (608)886-2903  &  Github: \url{https://github.com/blackruan}
 \end{tabular}
 
 \vspace{.02in}
